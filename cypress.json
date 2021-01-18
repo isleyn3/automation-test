@@ -1,0 +1,7 @@
+{
+    "defaultCommandTimeout": 30000,
+    "baseUrl": "https://bit.ly/3jOMrR9",
+    "viewportWidth": 1350,
+    "viewportHeight": 980,
+    "videoCompression": false
+}

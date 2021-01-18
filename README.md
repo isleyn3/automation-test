@@ -1,5 +1,3 @@
-### automation-test
-
 ## Test Setup
 
 ### Installations

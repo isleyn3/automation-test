@@ -4,7 +4,7 @@
 
 Você precisa ter o Node.js instalado antes de usar o Cypress.
 
-Para o restante das instalações, vá para a pasta do projeto no prompt de comando e digite
+Para o restante das instalações, vá para a pasta do projeto no prompt de comando e digite:
 
 `npm install`
 

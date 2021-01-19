@@ -20,20 +20,50 @@ export default class PesquisaPage {
   }
 
   accessSearchMenu() {
-    cy.get(this.button_menu_pesquisa).click();
+    cy.get(this.button_menu_pesquisa).click()
   }
 
-  fillSurveyForm() {
-    cy.get(this.field_name ).type('Isa')
-    cy.get(this.field_surname ).type('Alves')
-    cy.get(this.field_email).type('isa@teste.gmail.com')
-    cy.get(this.field_email_confirmation).type('isa@teste.gmail.com')
-    cy.get(this.field_phone).type('1198767868')
-    cy.get(this.radio_age).check('18-30', {force: true})
-    cy.get(this.select_how_long_area).select('mais-de-5-anos')
-    cy.get(this.select_need_to_improve).check('lideranca', {force: true})
-    cy.get(this.field_programming_language).type('JS, Ruby e Python')
-    cy.get(this.textarea_career_summary).type('teste')
+  fillInTheNameField(name) {
+    cy.get(this.field_name).type(name)
+  }
+
+  fillInTheSurnameField(surname) {
+    cy.get(this.field_surname).type(surname)
+  }
+
+  fillInTheEmailField(email) {
+    cy.get(this.field_email).type(email)
+  }
+
+  fillInTheEmailConfirmationField(email) {
+    cy.get(this.field_email_confirmation).type(email)
+  }
+
+  fillInThePhoneField(phone) {
+    cy.get(this.field_phone).type(phone)
+  }
+
+  fillInTheAgeField(age) {
+    cy.get(this.radio_age).check(age, {force: true})
+  }
+
+  fillInTheFieldOfHowLongArea(long) {
+    cy.get(this.select_how_long_area).select(long)
+  }
+
+  fillInTheFieldWhatNeedsToImprove(text) {
+    cy.get(this.select_need_to_improve).check(text, {force: true})
+  }
+
+  fillInTheLanguageField(languague) {
+    cy.get(this.field_programming_language).type(languague)
+  }
+
+  fillInTheTieldOfTheCareerField(career) {
+    cy.get(this.textarea_career_summary).type(career)
+  }
+
+  sendTheForm() {
     cy.get(this.button_send).click()
   }
 }

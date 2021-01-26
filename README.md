@@ -1,6 +1,6 @@
-## Test Setup
+## Configurar Teste
 
-### Installations
+### Instalalação
 
 Você precisa ter o Node.js instalado antes de usar o Cypress.
 
